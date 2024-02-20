@@ -23,9 +23,9 @@ const OrderAlert = ({ show, handleClose, itemCounts, subtotal }) => {
         <Modal show={show} onHide={handleClose} centered>
             <Modal.Body >{subtotal ? displayOrder() : "Your cart is empty. Please add some items before placing an order!"}</Modal.Body>
             <Modal.Footer>
-                <Button class="order-button" onClick={handleClose}>
+                <button class="order-button" onClick={handleClose}>
                     OK
-                </Button>
+                </button>
             </Modal.Footer>
         </Modal>
     );
